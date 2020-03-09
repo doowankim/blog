@@ -67,7 +67,7 @@ class NavBar extends Component { //로그인을 하면 메뉴가 바뀜
                     <div className="collapse navbar-collapse" id="mobile-nav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/selfEmploy">
+                                <Link className="nav-link" to="/profiles">
                                     {' '}
                                     셀프구직
                                 </Link>

@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import InputGroup from "../components/common/InputGroup";
 import TextFieldGroup from "../components/common/TextFieldGroup";
 import TextAreaFieldGroup from "../components/common/TextAreaFieldGroup";
 import { createPost } from "../actions/postActions";
@@ -36,14 +35,14 @@ class Writing extends Component {
 
     }
     render() {
-        const { errors, displaySocialInputs } = this.state;
+        const { errors } = this.state;
 
         return (
             <div className="writing">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 m-auto">
-                            <h1 className="display-4 text-center">자유 게시판</h1>
+                            <p className="display-4 text-center">자유 게시판</p>
 
                             <form onSubmit={this.onSubmit}>
                                 <TextFieldGroup

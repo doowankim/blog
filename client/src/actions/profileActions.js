@@ -4,7 +4,8 @@ import {
     PROFILE_LOADING,
     GET_ERRORS,
     CLEAR_CURRENT_PROFILE,
-    SET_CURRENT_USER
+    SET_CURRENT_USER,
+    GET_PROFILES
 } from "./types";
 
 // GET Current profile
@@ -138,4 +139,61 @@ export const deleteEducation = id => dispatch => {
                 })
             );
     }
+};
+
+// Get All profiles
+export const getProfiles = () => dispatch => {
+    dispatch(setProfileLoading());
+    axios
+        .get('/profile/total')
+        .then(res =>
+            dispatch({
+                type: GET_PROFILES,
+                payload: res.data
+            })
+        )
+        .catch(err =>
+            dispatch({
+                type: GET_ERRORS,
+                payload: null
+            })
+        )
+};
+
+// Get Profile by handle
+export const getProfileByHandle = handle => dispatch => {
+    dispatch(setProfileLoading());
+    axios
+        .get(`/profile/handle/${handle}`)
+        .then(res =>
+            dispatch({
+                type: GET_PROFILES,
+                payload: res.data
+            })
+        )
+        .catch(err =>
+            dispatch({
+                type: GET_ERRORS,
+                payload: null
+            })
+        );
+};
+
+// Get Profile by profile_id
+export const getProfileById = id => dispatch => {
+    dispatch(setProfileLoading());
+    axios
+        .get(`/profile/${id}`)
+        .then(res =>
+            dispatch({
+                type: GET_PROFILES,
+                payload: res.data
+            })
+        )
+        .catch(err =>
+            dispatch({
+                type: GET_ERRORS,
+                payload: null
+            })
+        );
 };

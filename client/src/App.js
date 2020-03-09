@@ -14,7 +14,7 @@ import Register from './components/auth/Register';
 import Dashboard from "./components/dashboard/Dashboard";
 import PrivateRoute from "./components/common/PrivateRoute";
 import ReadBBS from "./components/BBS/readBBS";
-import SelfEmploy from "./components/selfEmploy/SelfEmploy";
+import Profiles from './components/profiles/Profiles';
 import CreateProfile from "./create-profile/CreateProfile";
 import Writing from "./writing/Writing";
 import EditProfile from "./components/edit-profile/EditProfile";
@@ -57,6 +57,7 @@ class App extends Component {
             <div className="container">
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/profiles" component={Profiles} />
               <Switch>
                 <PrivateRoute
                   exact
@@ -76,13 +77,6 @@ class App extends Component {
                     exact
                     path="/writing"
                     component={Writing}
-                />
-              </Switch>
-              <Switch>
-                <PrivateRoute
-                    exact
-                    path="/selfEmploy"
-                    component={SelfEmploy}
                 />
               </Switch>
               <Switch>
