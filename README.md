@@ -86,4 +86,8 @@
 #### 3. 결과물 스크린샷
 <img width="1425" alt="스크린샷 2020-02-25 오전 10 51 07" src="https://user-images.githubusercontent.com/55137934/75600863-28bbb180-5af8-11ea-9db5-b006bf6d1994.png">
 <img width="1438" alt="스크린샷 2020-02-25 오전 10 52 04" src="https://user-images.githubusercontent.com/55137934/75600869-34a77380-5af8-11ea-816e-81b13da6b0b3.png">
+<<<<<<< HEAD
 <img width="1438" alt="스크린샷 2020-02-25 오전 10 52 17" src="https://user-images.githubusercontent.com/55137934/75600892-69b3c600-5af8-11ea-9b8f-b8850ff0a12c.png">
+=======
+<img width="1438" alt="스크린샷 2020-02-25 오전 10 52 17" src="https://user-images.githubusercontent.com/55137934/75600892-69b3c600-5af8-11ea-9b8f-b8850ff0a12c.png">
+>>>>>>> 41ef3922e5d23b76d763114b9f5bbd987064e1a3

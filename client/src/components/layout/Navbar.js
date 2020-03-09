@@ -29,7 +29,7 @@ class NavBar extends Component { //로그인을 하면 메뉴가 바뀜
                             style={{ width: '25px', marginRight: '5px' }}
                             title="You must have a Gravatar connected to your email to display an image"
                         />{' '}
-                        logout
+                        로그아웃
                     </a>
                 </li>
             </ul>
@@ -39,12 +39,12 @@ class NavBar extends Component { //로그인을 하면 메뉴가 바뀜
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
                     <Link className="nav-link" to="register">
-                        Sign Up
+                        회원가입
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="login">
-                        Sign In
+                        로그인
                     </Link>
                 </li>
             </ul>
