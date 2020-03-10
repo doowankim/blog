@@ -25,15 +25,13 @@ class ReadBBS extends Component {
 
         console.log(results);
 
-
-        // 삭제(Detail from ID - 댓글, 좋아요 등등), 수정, 글쓰기
         return (
             <div className="BBS">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-4">
                             <Link to="/writing" className="btn btn-dark">
-                                Write
+                                글쓰기
                             </Link>
                         </div>
                         <table className="table table-hover">

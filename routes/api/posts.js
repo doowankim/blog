@@ -20,6 +20,7 @@ router.post('/', authCheck, (req, res) => {
     const newPost = new postModel({
         text: req.body.text,
         name: req.user.name,
+        title: req.body.title,
         avatar: req.user.avatar,
         user: req.user.id
 //         attachedfile: req.file.path

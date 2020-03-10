@@ -9,6 +9,13 @@
       <change afterPath="$PROJECT_DIR$/../Homepage/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Homepage/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Homepage/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../client/src/component/Blog.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../client/src/component/FeaturedPost.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../client/src/component/Footer.js" afterDir="false" />
@@ -29,10 +36,21 @@
       <change afterPath="$PROJECT_DIR$/../practice/reactstraptest" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../practice/socialBlog" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../socialBlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../~$완_개발자 이력서.doc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../김두완/개발자 면접 질문정리.docx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../김두완/김두완 증명사진.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../김두완/김두완_이력서.doc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../김두완/리노스 자기소개서.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/authActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/authActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/BBS/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/BBS/Text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/BBS/readBBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/BBS/readBBS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/writing/Writing.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/writing/Writing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +65,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RgCKDQ2WN4NlGuG3ql9letOPn2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -156,7 +174,11 @@
       <workItem from="1576937482872" duration="1741000" />
       <workItem from="1576987774606" duration="6181000" />
       <workItem from="1583657661034" duration="2025000" />
-      <workItem from="1583712172012" duration="21027000" />
+      <workItem from="1583712172012" duration="23505000" />
+      <workItem from="1583800080989" duration="704000" />
+      <workItem from="1583804106219" duration="448000" />
+      <workItem from="1583805519198" duration="2949000" />
+      <workItem from="1583812002737" duration="995000" />
     </task>
     <servers />
   </component>

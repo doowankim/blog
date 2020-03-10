@@ -29,6 +29,73 @@
 * 프로필 정보(Detail) 등록 및 수정, 검색 기능, 삭제 기능, 경력 및 학력 등록 (Profile)
 * 게시판 글 올리기, 첨부파일(이미지) 추가, 좋아요 & 싫어요 기능, 댓글 기능 (Post)
 
+```js
+import { combineReducers } from 'redux';
+import authReducer from './authReducer';
+import errorReducer from './errorReducer';
+import profileReducer from "./profileReducer";
+import postReducer from "./postReducer";
+
+export default combineReducers({
+    auth: authReducer,
+    errors: errorReducer,
+    profile: profileReducer,
+    post: postReducer
+});
+```
+```js
+const PrivateRoute = ({ component: Component, auth, ...rest }) => (
+    <Route
+        {...rest}
+        render={props =>
+            auth.isAuthenticated === true ? (
+                <Component {...props} />
+            ) : (
+                <Redirect to="/login" />
+            )
+        }
+    />
+);
+```
+> 게시판 글쓰기, 대쉬보드 진입, 경력 및 학력추가 기능을 사용할 시에 로그인을 필수로 하는 코드 작성
+
+```js
+export const GET_ERRORS = 'GET_ERRORS';
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+
+export const GET_PROFILE = 'GET_PROFILE';
+export const PROFILE_LOADING = 'PROFILE_LOADING';
+export const PROFILE_NOT_FOUND = 'PROFILE_NOT_FOUND';
+export const CLEAR_CURRENT_PROFILE = 'CLEAR_CURRENT_PROFILE';
+export const GET_PROFILES = 'GET_PROFILES';
+
+export const POST_LOADING = 'POST_LOADING';
+export const GET_POST = 'GET_POST';
+export const CLEAR_CURRENT_POST = "CLEAR_CURRENT_POST";
+```
+```js
+const initialState = {
+    isAuthenticated: false,
+    user: {}
+};
+
+
+export default function(state = initialState, action) {
+    switch (action.type) {
+        case SET_CURRENT_USER:
+            return {
+                ...state,
+                isAuthenticated: !isEmpty(action.payload),
+                user: action.payload
+            };
+
+        default:
+            return state;
+    }
+}
+```
+> user, profile, post의 counter를 만든 뒤 state, action 를 정의하며 리덕스 입히기
+
 ### 폴더 구조
 
 * common : 공통 함수
@@ -84,10 +151,13 @@
 | [nodemon](https://github.com/remy/nodemon)                                                                                | node.js 응용 프로그램의 변경 사항을 모니터링하고 서버를 자동으로 다시 시작   | -           |
 
 #### 3. 결과물 스크린샷
-<img width="1425" alt="스크린샷 2020-02-25 오전 10 51 07" src="https://user-images.githubusercontent.com/55137934/75600863-28bbb180-5af8-11ea-9db5-b006bf6d1994.png">
-<img width="1438" alt="스크린샷 2020-02-25 오전 10 52 04" src="https://user-images.githubusercontent.com/55137934/75600869-34a77380-5af8-11ea-816e-81b13da6b0b3.png">
-<<<<<<< HEAD
-<img width="1438" alt="스크린샷 2020-02-25 오전 10 52 17" src="https://user-images.githubusercontent.com/55137934/75600892-69b3c600-5af8-11ea-9b8f-b8850ff0a12c.png">
-=======
-<img width="1438" alt="스크린샷 2020-02-25 오전 10 52 17" src="https://user-images.githubusercontent.com/55137934/75600892-69b3c600-5af8-11ea-9b8f-b8850ff0a12c.png">
->>>>>>> 41ef3922e5d23b76d763114b9f5bbd987064e1a3
+<img width="1422" alt="스크린샷 2020-03-10 오후 12 16 02" src="https://user-images.githubusercontent.com/55137934/76277899-7ccf4e80-62cd-11ea-94ae-0bf8abf64a0c.png">
+<img width="1437" alt="스크린샷 2020-03-10 오후 12 16 34" src="https://user-images.githubusercontent.com/55137934/76277915-89ec3d80-62cd-11ea-98af-788b628fc499.png">
+<img width="1439" alt="스크린샷 2020-03-10 오후 12 16 49" src="https://user-images.githubusercontent.com/55137934/76277922-8eb0f180-62cd-11ea-80c8-a9b19dbd5c97.png">
+<img width="1425" alt="스크린샷 2020-03-10 오후 12 17 28" src="https://user-images.githubusercontent.com/55137934/76277934-97a1c300-62cd-11ea-91de-2b6ae0bfd12c.png">
+<img width="1427" alt="스크린샷 2020-03-10 오후 12 21 48" src="https://user-images.githubusercontent.com/55137934/76277945-9c667700-62cd-11ea-8e9c-c41e711b9510.png">
+<img width="1427" alt="스크린샷 2020-03-10 오후 12 23 05" src="https://user-images.githubusercontent.com/55137934/76277952-9ff9fe00-62cd-11ea-9734-b159cbe32df8.png">
+<img width="1440" alt="스크린샷 2020-03-10 오후 12 24 13" src="https://user-images.githubusercontent.com/55137934/76277955-a25c5800-62cd-11ea-8eba-cf5a0bbb70ab.png">
+<img width="1439" alt="스크린샷 2020-03-10 오후 12 37 47" src="https://user-images.githubusercontent.com/55137934/76277961-a4beb200-62cd-11ea-868d-ace1a76a5e6b.png">
+<img width="1439" alt="스크린샷 2020-03-10 오후 12 45 32" src="https://user-images.githubusercontent.com/55137934/76277964-a6887580-62cd-11ea-87dd-0767ba0599fa.png">
+

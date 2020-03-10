@@ -28,6 +28,9 @@ const postingSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'users'
     },
+    title: {
+        type: String
+    },
     text: {
         type: String,
         required: true

@@ -69,7 +69,7 @@ class NavBar extends Component { //로그인을 하면 메뉴가 바뀜
                             <li className="nav-item">
                                 <Link className="nav-link" to="/profiles">
                                     {' '}
-                                    셀프구직
+                                    개발자 프로필
                                 </Link>
                             </li>
                             <li className="nav-item">

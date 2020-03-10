@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import TextFieldGroup from "../components/common/TextFieldGroup";
 import TextAreaFieldGroup from "../components/common/TextAreaFieldGroup";
 import { createPost } from "../actions/postActions";
@@ -42,16 +42,12 @@ class Writing extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 m-auto">
+                            <Link to="/dashboard" className="btn btn-dark">
+                                Go Back
+                            </Link>
                             <p className="display-4 text-center">자유 게시판</p>
 
                             <form onSubmit={this.onSubmit}>
-                                <TextFieldGroup
-                                    onChange={this.onChange}
-                                    value={this.state.name}
-                                    name="name"
-                                    placeholder="Input your name"
-                                    error={errors.name}
-                                />
                                 <TextFieldGroup
                                     onChange={this.onChange}
                                     value={this.state.title}
