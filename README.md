@@ -4,6 +4,7 @@
 * Language & Framework : React.js, React-Redux, Node.js, Express.js
 * Web Skills : HTML, CSS
 * Database : MongoDB
+* Design Pattern : MVC
 
 ## 기획
 #### 1.의도
