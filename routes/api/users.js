@@ -30,9 +30,6 @@ router.post('/signup', (req, res) => {
 
                 errors.msg = 'Email already exists';
                 return res.json(errors);
-                // return res.json({
-                //     email: 'Email already exists'
-                // });
             } else {
                 // avatar 생성
                 const avatar = gravatar.url(req.body.email, { //기본이미지에 kevin이라고 하면 k를 이미지

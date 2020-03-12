@@ -9,6 +9,7 @@
       <change afterPath="$PROJECT_DIR$/../Homepage/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Homepage/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Homepage/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TIL/front-end/react/Redux.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
@@ -36,21 +37,17 @@
       <change afterPath="$PROJECT_DIR$/../practice/reactstraptest" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../practice/socialBlog" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../socialBlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../~$완_개발자 이력서.doc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../김두완/개발자 면접 질문정리.docx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../김두완/김두완 증명사진.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../김두완/김두완_이력서.doc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../김두완/리노스 자기소개서.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/authActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/authActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/BBS/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/BBS/Text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/BBS/readBBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/BBS/readBBS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/profileActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/profileActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/writing/Writing.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/writing/Writing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profiles/profileItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profiles/profileItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +175,10 @@
       <workItem from="1583800080989" duration="704000" />
       <workItem from="1583804106219" duration="448000" />
       <workItem from="1583805519198" duration="2949000" />
-      <workItem from="1583812002737" duration="995000" />
+      <workItem from="1583812002737" duration="1724000" />
+      <workItem from="1583883076934" duration="2524000" />
+      <workItem from="1583907348452" duration="965000" />
+      <workItem from="1583971073775" duration="9102000" />
     </task>
     <servers />
   </component>

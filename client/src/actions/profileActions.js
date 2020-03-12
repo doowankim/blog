@@ -21,7 +21,7 @@ export const getCurrentProfile = () => dispatch => {
         )
         .catch(err =>
             dispatch({
-                type: GET_PROFILE,
+                type: GET_ERRORS,
                 payload: {}
             })
         );

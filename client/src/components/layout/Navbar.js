@@ -15,7 +15,7 @@ class NavBar extends Component { //로그인을 하면 메뉴가 바뀜
         const { isAuthenticated, user } = this.props.auth;
 
         const authLinks = (
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                     <a
                         href=""
@@ -29,22 +29,22 @@ class NavBar extends Component { //로그인을 하면 메뉴가 바뀜
                             style={{ width: '25px', marginRight: '5px' }}
                             title="You must have a Gravatar connected to your email to display an image"
                         />{' '}
-                        로그아웃
+                        logout
                     </a>
                 </li>
             </ul>
         );
 
         const guestLinks = (
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                     <Link className="nav-link" to="register">
-                        회원가입
+                        Sign Up
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="login">
-                        로그인
+                        Sign In
                     </Link>
                 </li>
             </ul>
@@ -65,21 +65,21 @@ class NavBar extends Component { //로그인을 하면 메뉴가 바뀜
                         <span className="navbar-toggler-icon" />
                     </button>
                     <div className="collapse navbar-collapse" id="mobile-nav">
-                        <ul className="navbar-nav ml-auto">
+                        <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
                                 <Link className="nav-link" to="/profiles">
                                     {' '}
-                                    개발자 프로필
+                                    Developer Profiles
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/readBBS">
                                     {' '}
-                                    게시판
+                                    Boards
                                 </Link>
                             </li>
-                            {isAuthenticated ? authLinks : guestLinks}
                         </ul>
+                        {isAuthenticated ? authLinks : guestLinks}
                     </div>
                 </div>
             </nav>
