@@ -31,16 +31,16 @@ class ReadBBS extends Component {
                     <div className="row">
                         <div className="col-sm-4">
                             <Link to="/writing" className="btn btn-dark">
-                                글쓰기
+                                Write
                             </Link>
                         </div>
                         <table className="table table-hover">
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">이   름</th>
-                                <th scope="col">제   목</th>
-                                <th scope="col">작성 날짜</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Date</th>
                             </tr>
                             </thead>
                             <tbody>

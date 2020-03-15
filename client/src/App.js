@@ -5,6 +5,7 @@ import store from './store';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 import {setCurrentUser, logoutUser} from './actions/authActions';
+import Helmet from 'react-helmet';
 
 import Footer from './components/layout/Footer';
 import NavBar from './components/layout/Navbar';
@@ -50,6 +51,9 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
+        <Helmet>
+          <title>Dev | Connector</title>
+        </Helmet>
         <Router>
           <div className="App">
             <NavBar />

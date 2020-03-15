@@ -42,7 +42,7 @@ class Writing extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 m-auto">
-                            <Link to="/dashboard" className="btn btn-dark">
+                            <Link to="/readBBS" className="btn btn-dark">
                                 Go Back
                             </Link>
                             <p className="display-4 text-center">자유 게시판</p>
